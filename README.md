@@ -1,5 +1,5 @@
 # grpc-sample
-sample code for gRPC
+sample code for [gRPC](https://github.com/grpc/grpc)
 
 ## Install
 
