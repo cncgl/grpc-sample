@@ -7,7 +7,7 @@ sample code for gRPC
 proto 以下には 生成されたスタブファイルがありますが、自分で生成するには protocol buffer が必要になります。
 ```
 $ git clone https://github.com/google/protobuf.git
-$ cd $_
+$ cd protobuf
 $ ./autogen.sh
 $ ./configure
 $ make
@@ -26,9 +26,9 @@ $ protoc --go_out=plugins=grpc:. proto/helloworld.proto
 ```
 
 ### Ruby の場合
-Gemfile でインストールされていますが、Ruby のスタブファイルの生成には Ruby 版の protocol buffer を使用します。
+proto 以下には 生成されたスタブファイルがありますが、Ruby のスタブファイルの生成には protocol buffer を使用します。
 ```
-$ bundle exec protoc --ruby_out . proto/helloworld.proto
+$ protoc -I proto --ruby_out=lib --grpc_out=lib --plugin=protoc-gen-grpc=`which grpc_ruby_plugin` proto/helloworld.proto
 ```
 
 

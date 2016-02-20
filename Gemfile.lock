@@ -54,6 +54,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  google-protobuf
   grpc
   protobuf
 

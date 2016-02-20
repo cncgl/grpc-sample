@@ -1,6 +1,9 @@
 # A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # gem "rails"
-gem "protobuf"
-gem "grpc"
+
+gem 'protobuf'
+
+gem 'google-protobuf'
+gem 'grpc'
