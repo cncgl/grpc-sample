@@ -41,6 +41,11 @@ $ protoc -I proto --ruby_out=lib --grpc_out=lib --plugin=protoc-gen-grpc=`which 
 $ go run hello_server.go
 ```
 
+#### Ruby の場合
+```
+$ ruby hello_server.rb
+```
+
 ### クライアント側
 
 #### Go の場合
